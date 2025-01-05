@@ -19,6 +19,11 @@
     <img src="asstets/img3.jpeg" alt="Lista de Movimientos" width="170">
 </div>  
 
+## 📲 Descargar el APK
+
+Puedes descargar el APK desde el siguiente enlace:  
+[Descargar APK](apk)
+
 ## ⚙️ Requisitos del Sistema  
 
 - **SDK mínimo**: 21 (Android 5.0 Lollipop)  
