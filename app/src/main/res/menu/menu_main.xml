@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="ExtraText">
 
-    <!-- Botón para eliminar -->
     <item
         android:id="@+id/action_eliminar"
         android:icon="@android:drawable/ic_delete"

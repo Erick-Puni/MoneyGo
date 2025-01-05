@@ -11,7 +11,6 @@
     android:padding="12dp"
     tools:ignore="ExtraText">
 
-    <!-- Descripción del movimiento -->
     <TextView
         android:id="@+id/tvDescripcion"
         android:layout_width="0dp"
@@ -24,7 +23,6 @@
     android:textSize="16sp"
     android:textStyle="bold" />
 
-    <!-- Monto del movimiento -->
     <TextView
         android:id="@+id/tvMonto"
         android:layout_width="0dp"
@@ -35,7 +33,6 @@
         android:textColor="#224e87"
     android:textSize="16sp" />
 
-    <!-- Tipo de movimiento -->
     <TextView
         android:id="@+id/tvTipo"
         android:layout_width="0dp"
@@ -47,7 +44,6 @@
     android:textSize="16sp"
     android:textStyle="italic" />
 
-    <!-- Botón de eliminar (icono de basurero) -->
     <ImageView
         android:id="@+id/btnEliminar"
         android:layout_width="40dp"

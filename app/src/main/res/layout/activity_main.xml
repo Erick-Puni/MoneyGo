@@ -8,7 +8,6 @@
     android:padding="16dp"
     android:background="#f4f4f9">
 
-    <!-- Título principal -->
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="match_parent"
@@ -21,7 +20,6 @@
         android:layout_marginBottom="12dp"
         android:fontFamily="sans-serif-medium" />
 
-    <!-- Descripción antes del campo Monto -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +28,6 @@
         android:textColor="#224e87"
         android:layout_marginBottom="4dp" />
 
-    <!-- Campo Monto -->
     <EditText
         android:id="@+id/etMonto"
         android:layout_width="match_parent"
@@ -42,7 +39,6 @@
         android:textColorHint="#C6C6C7"
         android:textSize="15sp" />
 
-    <!-- Descripción antes del campo Descripción -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +58,6 @@
         android:textColorHint="#C6C6C7"
         android:textSize="15sp" />
 
-    <!-- Descripción antes del Spinner -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +67,6 @@
         android:layout_marginTop="12dp"
         android:layout_marginBottom="4dp" />
 
-    <!-- Selector de tipo con flecha -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,7 +90,6 @@
             app:tint="#497fc5" />
     </LinearLayout>
 
-    <!-- Botón para registrar -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRegistrar"
         android:layout_width="match_parent"
@@ -110,7 +103,6 @@
         android:paddingVertical="12dp"
         android:elevation="4dp" />
 
-    <!-- RecyclerView para lista de movimientos -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMovimientos"
         android:layout_width="match_parent"
@@ -120,7 +112,6 @@
         android:background="#f4f4f9"
         android:elevation="2dp" />
 
-    <!-- Saldo total -->
     <TextView
         android:id="@+id/tvSaldoTotal"
         android:layout_width="match_parent"
