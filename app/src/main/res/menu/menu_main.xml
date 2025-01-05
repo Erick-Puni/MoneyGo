@@ -1,0 +1,14 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText">
+
+    <!-- Botón para eliminar -->
+    <item
+        android:id="@+id/action_eliminar"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Eliminar"
+        android:visible="false"
+        android:tint="#224e87"
+    app:showAsAction="ifRoom" />
+</menu>

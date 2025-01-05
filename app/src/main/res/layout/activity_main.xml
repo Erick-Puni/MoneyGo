@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f4f4f9">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gestor de Presupuesto"
+        android:textSize="20sp"
+        android:textColor="#224e87"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Descripción antes del campo Monto -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escribe el monto de tu ingreso o gasto:"
+        android:textSize="16sp"
+        android:textColor="#224e87"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Campo Monto -->
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el monto"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#C6C6C7"
+        android:textSize="15sp" />
+
+    <!-- Descripción antes del campo Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agrega una breve descripción del movimiento:"
+        android:textSize="16sp"
+        android:textColor="#224e87"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:textColorHint="#C6C6C7"
+        android:textSize="15sp" />
+
+    <!-- Descripción antes del Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el tipo de movimiento:"
+        android:textSize="16sp"
+        android:textColor="#224e87"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Selector de tipo con flecha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edittext"
+        android:padding="2dp">
+
+        <Spinner
+            android:id="@+id/spTipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/arrow_down_float"
+            android:contentDescription="Flecha desplegable"
+            app:tint="#497fc5" />
+    </LinearLayout>
+
+    <!-- Botón para registrar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
+        app:cornerRadius="16dp"
+        app:backgroundTint="#224e87"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="12dp"
+        android:elevation="4dp" />
+
+    <!-- RecyclerView para lista de movimientos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMovimientos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:background="#f4f4f9"
+        android:elevation="2dp" />
+
+    <!-- Saldo total -->
+    <TextView
+        android:id="@+id/tvSaldoTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saldo total: $0.00"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:gravity="center"
+        android:background="#224e87"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp" />
+</LinearLayout>
